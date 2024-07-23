@@ -46,3 +46,8 @@ chmod +x *.sh
 chmod +x *.sh
 ./eval.sh
 ```
+
+## Testing
+* I have tested my changes from FAST API Swagger UI - http://localhost:8000/docs#/strategy/get_portfolio_by_id_portfolio__portfolio_id__get
+* All APIs basic sanity testing screenshot has been added in google drive link - https://drive.google.com/drive/folders/1HIECh8MBuUMiEsEeC6NR7swNk5b1dOGI?usp=sharing
+* Unfortunately, UTs were not added due to time constraints

@@ -12,7 +12,6 @@ class Token(BaseModel):
     access_token: str
     token_type: str
 
-
 class User(BaseModel):
     email: str
     first_name: str
@@ -47,7 +46,7 @@ class Strategy(BaseModel):
 
 
 class PortfolioRequest(BaseModel):
-    user_id: int
+    user_id: str
     strategy_id: str = "0"
     holdings: List[Holding]
 
@@ -62,6 +61,9 @@ class TickData(BaseModel):
     stock_symbol: str
     timestamp: datetime
     price: float
+
+class TickDataResponse(BaseModel):
+    data: List[TickData]
 
 
 class TradeHistory(BaseModel):

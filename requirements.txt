@@ -5,3 +5,7 @@ pytest-html
 sqlalchemy
 uvicorn
 coverage
+redis
+passlib[bcrypt]
+python-jose[cryptography]
+psycopg2-binary 

@@ -2,7 +2,13 @@ from enum import Enum
 
 JWT_TOKEN = "jwt_token"
 DAYS_IN_YEAR = 365.25
-
+REDIS_HOST = 'REDIS_HOST'
+REDIS_PORT = 'REDIS_PORT'
+PASSWORD = 'hash_password'
+EMAIL = 'email'
+SECRET_KEY = "TESTING"
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 class TradeType(str, Enum):
     BUY = "BUY"

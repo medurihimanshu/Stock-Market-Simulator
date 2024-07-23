@@ -1,10 +1,18 @@
 from assessment_app.repository.database import Base
+from sqlalchemy import Column, Float, ForeignKey, Integer, String, DateTime
+from sqlalchemy.orm import relationship
+import uuid
+from datetime import datetime
 
 
-class UserCredentials(Base):
-    email: str
-    password_hash: str
-    random_salt: str
+class User(Base):
+    __tablename__ = "users"
 
-    class Config:
-        orm_mode = True
+    user_id = Column(String, primary_key=True)
+
+    
+
+
+
+
+
